@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+
+        }
+
+        body {
+            background-image: url(pexels-hasan-albari-1229861.jpg);
+            background-size: cover;
+            background-position: center;
+            font-family: sans-serif;
+
+        }
+
+        li,
+        a,
+        button {
+
+            color: wheat;
+            font-size: 16px;
+            text-decoration: none;
+
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 30px 10%;
+            background-color: darkcyan;
+            border-radius: 128px 112px 94px 99px;
+        }
+
+        .navbar {
+            list-style: none;
+
+            overflow: auto;
+        }
+
+        .navbar li {
+            display: inline-block;
+            padding: 0px 20px;
+        }
+
+        button {
+            padding: 9px 25px;
+            background-color: #362f2f;
+            border-radius: 34px 3px;
+            margin: 12px 12px;
+        }
+
+
+        #a1,
+        #a2,
+        #a3,
+        #a4 {
+            padding: 9px 25px;
+            margin: 1px 22px;
+            background-color: #362f2f;
+            border-radius: 18px 15px;
+            border: 2px solid #4c4343d4;
+
+
+
+        }
+
+        .login {
+
+            border: 2px solid #7c8889;
+            border-radius: 59px 2px;
+            display: flex;
+            padding: 11px 12px;
+            margin: 44px 12px;
+            background-color: #168f93;
+            color: wheat;
+            width: 30%;
+            justify-content: center;
+            text-align: center;
+            float: right;
+            font-size: 29px;
+            margin-right: 78px;
+        }
+
+
+        form input {
+            font-size: 12px;
+            border-radius: 12px 12px;
+            padding: 12px 12px;
+            margin: 12px 22px;
+
+        }
+
+        h2 {
+            padding-bottom: 42px;
+        }
+
+        .signUP {
+            padding: 9px 25px;
+            background-color: #362f2f;
+            border-radius: 34px 3px;
+            margin: 12px 12px;
+
+        }
+        .sub-menu-1{
+            display: none;
+
+        }
+        .navbar li a :hover{
+            background-color: aquamarine;
+            color: crimson;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+
+        <nav>
+
+            <ul class="navbar">
+
+                <li id="a1"><a href="#">Home</a>
+
+                    <div class="sub-menu-1">
+                        <ul>
+                            <li><a href="#">service1</a></li>
+                            <li><a href="#">about1</a></li>
+                            <li><a href="#">contact1</a></li>
+
+                        </ul>
+
+                    </div>
+
+                </li>
+
+                <li id="a2"><a href="#">Service</a></li>
+                <li id="a3"><a href="#">About</a></li>
+                <li id="a4"><a href="#">contact</a></li>
+            </ul>
+
+
+        </nav>
+
+        <div class="signIn">
+            <a class="cta" href="#"><button>Sign In</button></a>
+        </div>
+
+    </header>
+
+    <div class="login">
+        <form action="backend.php">
+
+            <h2>Create an account</h2>
+
+            <div class="name">
+                <label for="fname">Name<br>
+                </label>
+                <input type="text" name="fname" id="name" placeholder="Enter the name ">
+
+            </div>
+            <div class="email">
+                <label for="email">Email<br>
+                </label>
+                <input type="email" name="email" id="email" placeholder="Enter the email ">
+            </div>
+            <div class="Remail">
+                <label for="email">Re-type Email<br>
+                </label>
+                <input type="email" name="email" id="email" placeholder=" Re- type the email ">
+            </div>
+            <div class="password">
+                <label for="password">password<br>
+                </label>
+                <input type="password" name="password" id="password" placeholder="Enter the password ">
+            </div>
+            <div class="signUp">
+                <a class="cta" href="#"><button>Sign Up</button></a>
+
+
+            </div>
+        </form>
+
+    </div>
+
+</body>
+
+</html>
